@@ -4,9 +4,4 @@ kind: Kustomization
 resources:
 - ../../base
 
-patches:
-- path: patch-clusterissuer.yaml
-  target:
-    kind: Policy
-    name: azure-clusterissuer-policy
-    namespace: cert-manager
+
