@@ -1,0 +1,6 @@
+vault_name: "kv-test9112212-ad"
+vault_resource_group: "acmsre-team-rg"
+#vault_uri: "https://kv-acm-sre-rhaapemea.vault.azure.net"
+authorized_users:
+- "aa"
+- "bb"

@@ -1,0 +1,20 @@
+---
+# This playbook setups an Azure Key Vault
+
+- hosts: localhost
+  gather_facts: false
+  connection: local
+  become: false
+
+  vars:
+    # The following line is necessary because the generated inventory file
+    # has this set to true.  We don't need to use sudo for the following
+    # operations.
+    ansible_become: false
+    ansible_python_interpreter: "{{ ansible_playbook_python }}"
+
+  tasks:
+  - name: Include DNS role
+    include_role:
+      name: ../roles/aap_controller_setup_key_vault
+      tasks_from: main

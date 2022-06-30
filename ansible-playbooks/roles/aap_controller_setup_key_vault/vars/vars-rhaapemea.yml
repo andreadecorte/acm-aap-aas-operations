@@ -1,0 +1,6 @@
+vault_name: "aa"
+vault_resource_group: "rg-acm"
+#vault_uri: "https://kv-acm-sre-rhaapemea.vault.azure.net"
+authorized_users:
+- "aa"
+- "bb"
